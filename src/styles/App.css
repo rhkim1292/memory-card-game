@@ -1,0 +1,16 @@
+:root {
+	--grid-cell-width: 100px;
+	--grid-cell-height: 100px;
+	--grid-row-count: 3;
+	--grid-col-count: 5;
+}
+
+div.card-list-container {
+	display: grid;
+	grid-template-rows: repeat(var(--grid-row-count), var(--grid-cell-height));
+	grid-template-columns: repeat(
+		var(--grid-col-count),
+		var(--grid-cell-width)
+	);
+	gap: 5px;
+}

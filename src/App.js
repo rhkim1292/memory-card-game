@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Card from './components/Card.js';
+import './styles/App.css';
 
 function App() {
 	const [bestScore, setBestScore] = useState(0);
@@ -70,15 +71,17 @@ function App() {
 		<div className="App">
 			<h3>Best Score: {bestScore}</h3>
 			<h3>Current Score: {currScore}</h3>
-			{cardList.map((currCard, idx) => {
-				return (
-					<Card
-						key={currCard.value.toString()}
-						card={currCard}
-						cardIdx={idx}
-					/>
-				);
-			})}
+			<div className="card-list-container">
+				{cardList.map((currCard, idx) => {
+					return (
+						<Card
+							key={currCard.value.toString()}
+							card={currCard}
+							cardIdx={idx}
+						/>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
