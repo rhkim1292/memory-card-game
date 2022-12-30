@@ -7,7 +7,12 @@ export default function Card(props) {
 			className="card"
 			data-cardidx={`${props.cardIdx}`}
 		>
-			{props.card.value}
+			<img
+				className="card-img"
+				src={props.card.imgPath}
+				alt={props.card.breed}
+			/>
+			{props.card.breed}
 		</div>
 	);
 }

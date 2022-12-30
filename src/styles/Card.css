@@ -1,17 +1,24 @@
 div.card {
 	border: 3px solid black;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(219, 100%, 86%)
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: hsl(219, 100%, 86%);
+	padding-top: 7px;
 }
 
 div.card:hover {
 	cursor: pointer;
-    background-color: hsl(220, 100%, 92%)
+	background-color: hsl(220, 100%, 92%);
 }
 
 div.card:active {
-    background-color: hsl(219, 100%, 86%)
+	background-color: hsl(219, 100%, 86%);
+}
+
+div.card img.card-img {
+	width: 280px;
+	border-radius: 15px;
 }

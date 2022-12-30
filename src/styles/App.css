@@ -1,8 +1,8 @@
 :root {
-	--grid-cell-width: 100px;
-	--grid-cell-height: 100px;
-	--grid-row-count: 3;
-	--grid-col-count: 5;
+	--grid-cell-width: 300px;
+	--grid-cell-height: 350px;
+	--grid-row-count: 2;
+	--grid-col-count: 3;
 }
 
 div.card-list-container {

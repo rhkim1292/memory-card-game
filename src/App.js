@@ -1,19 +1,49 @@
 import { useEffect, useState } from 'react';
 import Card from './components/Card.js';
 import './styles/App.css';
+import yorkie from './images/yorkie.png';
+import jindo from './images/jindo.jpg';
+import gershep from './images/gershep.png';
+import ausshep from './images/ausshep.jpg';
+import golden from './images/golden.jpg';
+import samoyed from './images/samoyed.jpg';
 
 function App() {
 	const [bestScore, setBestScore] = useState(0);
 	const [currScore, setCurrScore] = useState(0);
 	const [cardList, setCardList] = useState(
-		shuffle(
-			[...Array(15).keys()].map((val) => {
-				return {
-					value: val,
-					clicked: false,
-				};
-			})
-		)
+		shuffle([
+			{
+				breed: 'Yorkie',
+				imgPath: yorkie,
+				clicked: false,
+			},
+			{
+				breed: 'Jindo',
+				imgPath: jindo,
+				clicked: false,
+			},
+			{
+				breed: 'German Shepherd',
+				imgPath: gershep,
+				clicked: false,
+			},
+			{
+				breed: 'Australian Shepherd',
+				imgPath: ausshep,
+				clicked: false,
+			},
+			{
+				breed: 'Golden Retriever',
+				imgPath: golden,
+				clicked: false,
+			},
+			{
+				breed: 'Samoyed',
+				imgPath: samoyed,
+				clicked: false,
+			},
+		])
 	);
 
 	useEffect(() => {
@@ -51,13 +81,17 @@ function App() {
 
 	const resetCards = (arr) => {
 		return arr.map((currCard) => {
-			return { value: currCard.value, clicked: false };
+			return {
+				breed: currCard.breed,
+				imgPath: currCard.imgPath,
+				clicked: false,
+			};
 		});
 	};
 
 	const handleClick = (e) => {
-		if (!cardList[e.target.dataset.cardidx].clicked) {
-			cardList[e.target.dataset.cardidx].clicked = true;
+		if (!cardList[e.currentTarget.dataset.cardidx].clicked) {
+			cardList[e.currentTarget.dataset.cardidx].clicked = true;
 			setCurrScore(currScore + 1);
 			setCardList(shuffle(cardList));
 		} else {
@@ -75,7 +109,7 @@ function App() {
 				{cardList.map((currCard, idx) => {
 					return (
 						<Card
-							key={currCard.value.toString()}
+							key={currCard.breed}
 							card={currCard}
 							cardIdx={idx}
 						/>
