@@ -2,11 +2,20 @@ import { useEffect, useState } from 'react';
 import Card from './components/Card.js';
 import './styles/App.css';
 import yorkie from './images/yorkie.png';
-import jindo from './images/jindo.jpg';
+import jindo from './images/jindo.png';
 import gershep from './images/gershep.png';
 import ausshep from './images/ausshep.jpg';
-import golden from './images/golden.jpg';
-import samoyed from './images/samoyed.jpg';
+import golden from './images/golden.png';
+import samoyed from './images/samoyed.png';
+import maltipoo from './images/maltipoo.png';
+import corgi from './images/corgi.jpeg';
+import frenchie from './images/frenchie.jpg';
+import shiba from './images/shiba.png';
+import dalmatian from './images/dalmatian.jpg';
+import poodle from './images/poodle.jpg';
+import greatdane from './images/greatdane.png';
+import chowchow from './images/chowchow.jpg';
+import rottweiler from './images/rottweiler.jpg';
 
 function App() {
 	const [bestScore, setBestScore] = useState(0);
@@ -41,6 +50,51 @@ function App() {
 			{
 				breed: 'Samoyed',
 				imgPath: samoyed,
+				clicked: false,
+			},
+			{
+				breed: 'Maltipoo',
+				imgPath: maltipoo,
+				clicked: false,
+			},
+			{
+				breed: 'Corgi',
+				imgPath: corgi,
+				clicked: false,
+			},
+			{
+				breed: 'French Bulldog',
+				imgPath: frenchie,
+				clicked: false,
+			},
+			{
+				breed: 'Shiba Inu',
+				imgPath: shiba,
+				clicked: false,
+			},
+			{
+				breed: 'Dalmatian',
+				imgPath: dalmatian,
+				clicked: false,
+			},
+			{
+				breed: 'Standard Poodle',
+				imgPath: poodle,
+				clicked: false,
+			},
+			{
+				breed: 'Great Dane',
+				imgPath: greatdane,
+				clicked: false,
+			},
+			{
+				breed: 'Chow Chow',
+				imgPath: chowchow,
+				clicked: false,
+			},
+			{
+				breed: 'Rottweiler',
+				imgPath: rottweiler,
 				clicked: false,
 			},
 		])
@@ -103,8 +157,17 @@ function App() {
 
 	return (
 		<div className="App">
-			<h3>Best Score: {bestScore}</h3>
-			<h3>Current Score: {currScore}</h3>
+			<header>
+				<h1>Doggy Breed Memory Game</h1>
+				<span>
+					Click on as many dog breeds as you can without clicking the
+					same breed twice!
+				</span>
+				<div className="score-container">
+					<h3 className="curr-score">Current Score: {currScore}</h3>
+					<h3 className="best-score">Best Score: {bestScore}</h3>
+				</div>
+			</header>
 			<div className="card-list-container">
 				{cardList.map((currCard, idx) => {
 					return (

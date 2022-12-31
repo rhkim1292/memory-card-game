@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 div.card {
 	border: 3px solid black;
 	border-radius: 15px;
@@ -7,6 +9,10 @@ div.card {
 	align-items: center;
 	background-color: hsl(219, 100%, 86%);
 	padding-top: 7px;
+	font-family: 'Righteous', cursive;
+	font-size: 29px;
+	color: rgb(0, 0, 0);
+	gap: 9px;
 }
 
 div.card:hover {
