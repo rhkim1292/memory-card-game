@@ -1,19 +1,29 @@
 {
   "files": {
-    "main.css": "/memory-card-game/static/css/main.d10c7c7f.css",
-    "main.js": "/memory-card-game/static/js/main.9802edcf.js",
+    "main.css": "/memory-card-game/static/css/main.d34d73a5.css",
+    "main.js": "/memory-card-game/static/js/main.84c925be.js",
+    "static/media/jindo.png": "/memory-card-game/static/media/jindo.693f09eca9102c1b3c1d.png",
     "static/media/yorkie.png": "/memory-card-game/static/media/yorkie.dd0bc4e34513e64b8dee.png",
-    "static/media/gershep.png": "/memory-card-game/static/media/gershep.50760ee7ae9a52362408.png",
-    "static/media/jindo.jpg": "/memory-card-game/static/media/jindo.98623d176e845d15ab96.jpg",
+    "static/media/gershep.png": "/memory-card-game/static/media/gershep.53b2d17e23246c9b27f8.png",
+    "static/media/maltipoo.png": "/memory-card-game/static/media/maltipoo.f7c3e7ff7720ac01120d.png",
     "static/media/ausshep.jpg": "/memory-card-game/static/media/ausshep.98886ae78b892b9c1a86.jpg",
-    "static/media/golden.jpg": "/memory-card-game/static/media/golden.50e28d1ced51eb70a440.jpg",
-    "static/media/samoyed.jpg": "/memory-card-game/static/media/samoyed.331d04939fd529eb0b42.jpg",
+    "static/media/shiba.png": "/memory-card-game/static/media/shiba.c529a1da4de4904b294c.png",
+    "static/media/greatdane.png": "/memory-card-game/static/media/greatdane.675b6c2cfdb0700f3006.png",
+    "static/media/golden.png": "/memory-card-game/static/media/golden.b2d4f29dd538af8b6d02.png",
+    "static/media/paw-bg.png": "/memory-card-game/static/media/paw-bg.3c1c2f8d1a613145507f.png",
+    "static/media/dalmatian.jpg": "/memory-card-game/static/media/dalmatian.517e242514c4b6492798.jpg",
+    "static/media/samoyed.png": "/memory-card-game/static/media/samoyed.3c14044d93b1b1cbd038.png",
+    "static/media/frenchie.jpg": "/memory-card-game/static/media/frenchie.2b692cd56e46e823cbdb.jpg",
+    "static/media/chowchow.jpg": "/memory-card-game/static/media/chowchow.9af0ffd90f6c68b0c49e.jpg",
+    "static/media/corgi.jpeg": "/memory-card-game/static/media/corgi.e92789f9ed8538bcdaed.jpeg",
+    "static/media/rottweiler.jpg": "/memory-card-game/static/media/rottweiler.a7c0ecdebc936625394b.jpg",
+    "static/media/poodle.jpg": "/memory-card-game/static/media/poodle.d88ca42656263e7d4046.jpg",
     "index.html": "/memory-card-game/index.html",
-    "main.d10c7c7f.css.map": "/memory-card-game/static/css/main.d10c7c7f.css.map",
-    "main.9802edcf.js.map": "/memory-card-game/static/js/main.9802edcf.js.map"
+    "main.d34d73a5.css.map": "/memory-card-game/static/css/main.d34d73a5.css.map",
+    "main.84c925be.js.map": "/memory-card-game/static/js/main.84c925be.js.map"
   },
   "entrypoints": [
-    "static/css/main.d10c7c7f.css",
-    "static/js/main.9802edcf.js"
+    "static/css/main.d34d73a5.css",
+    "static/js/main.84c925be.js"
   ]
 }
