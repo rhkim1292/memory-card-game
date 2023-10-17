@@ -37,7 +37,6 @@
 			"last 1 safari version"
 		]
 	},
-	"homepage": "http://rhkim1292.github.io/memory-card-game",
 	"devDependencies": {
 		"gh-pages": "^4.0.0"
 	}
